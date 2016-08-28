@@ -3,15 +3,17 @@
 
 <h1>Hardware</h1>
 <h3>SDR: HackRF One - 265€</h3>
-https://greatscottgadgets.com/hackrf/ 
-https://greatscottgadgets.com/ant500/
++ <a href="https://greatscottgadgets.com/hackrf">HackRF One</a>
++ <a href="https://greatscottgadgets.com/ant500">Ant500</a>
 
-<h3>Clock: LeoBodnar Precision Frequency Reference GPS Clock - 197€</h3> http://www.leobodnar.com/shop/index.php?main_page=product_info&cPath=107&products_id=234
+
+<h3>Clock: LeoBodnar Precision Frequency Reference GPS Clock - 197€</h3> 
++ <a href="http://www.leobodnar.com/shop/index.php?main_page=product_info&cPath=107&products_id=234">GPS Clock</a>
 
 <h3>Cables</h3>
-Reduction SMA(M) - BNC(F) 50R
-Coaxial cable BNC(M) - BNC(M) 1m 50R
-USB A-B
++ Reduction SMA(M) - BNC(F) 50R
++ Coaxial cable BNC(M) - BNC(M) 1m 50R
++ USB A-B
 
 <h2>Summary</h2>
 https://mborgerson.com/getting-started-with-the-hackrf-one-on-ubuntu-14-04
