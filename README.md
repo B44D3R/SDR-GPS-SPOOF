@@ -1,4 +1,4 @@
-# Getting Started with the HackRF One on Ubuntu 14.04
+# How to spoof GPS signal
 
 
 <h1>Hardware</h1>
@@ -15,7 +15,7 @@
 + Coaxial cable BNC(M) - BNC(M) 1m 50R
 + USB A-B
 
-<h2>Summary</h2>
+<h1>Software</h1>
 https://mborgerson.com/getting-started-with-the-hackrf-one-on-ubuntu-14-04
 
 <p>Figuring out what you need to install to get going can be a drag, so I&rsquo;ll spare you the work and tell you how to quickly get started on an Ubuntu 14.04 LTS system.</p>
@@ -188,3 +188,74 @@ $ qmake ../
 </code></pre></li>
 </ol>
 
+
+<h2>Download, Build, and Install GPS-SDR-SIM</h2>
+
+<ol>
+<li><p>Clone the GPS-SDR-SIM repository:</p>
+
+<pre><code>$ cd ~/sdr
+$ git clone https://github.com/osqzss/gps-sdr-sim
+</code></pre></li>
+</ol>
+
+<ol>
+<li><p>Move to the repository:</p>
+
+<pre><code>$ cd gps-sdr-sim
+</code></pre></li>
+
+<li><p>To build it use GCC:</p>
+<pre><code>$ gcc gpssim.c -lm -fopenmp -o gps-sdr-sim
+</code></pre></li>
+</ol>
+
+<h2>How to add path to home directory</h2>
+
++ open file browser home dir
++ Ctrl-H to show hidden files
++ open file: .bashrc
++ add this line:
+
+<pre><code>export PATH="/home/user/sdr/gps-sdr-sim:$PATH"
+</code></pre></li>
+
+<h2>How to test external clock</h2>
+<pre><code>$ hackrf_si5351c -n 0 -r
+</code></pre></li>
++ [ 0] -> 0x01 clock is working
++ [ 0] -> 0x51 no clock
+
+<h2>How to create NMEA path</h2>
++ create path in <a href="https://www.google.com/earth/">Google Earth</a>
++ export the path as .KLM file
++ Import .KLM file and export NMEA text file using <a href="http://www.labsat.co.uk/index.php/en/products/satgen-simulator-software">SatGen</a>
++ example file name: nmea.txt
+
+<h2>How to get BRDC file</h2>
++ Download latest daily GPS broadcast ephemers file (brdc) from <a href="ftp://cddis.gsfc.nasa.gov/gnss/data/daily/
+downloaded">Google Earth</a>
++ Example file name: brdc2400.16g
+
+
+
+<h1>Prepare broadcast file</h1>
++ put both files into gps-sdr-sim folder
++ create gpssim.bin file by running:
+
+Dynamic mode:
+<pre><code>$ gps-sdr-sim -b 8 -e brdc2400.16n -g nmea.txt
+</code></pre></li>
+
+Static mode (location China):
+<pre><code>$ gps-sdr-sim -b 8 -e brdc2400.16n -l 30.286502,120.032669,100
+</code></pre></li>
+
+
+<h1>Initiate broadcast </h1>
+<pre><code>$ hackrf_transfer -t gpssim.bin -f 1575420000 -s 2600000 -a 1 -x 0
+</code></pre></li>
+
+
+
+<h1>Well done!</h1>
