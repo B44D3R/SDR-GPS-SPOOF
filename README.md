@@ -14,6 +14,7 @@ Coaxial cable BNC(M) - BNC(M) 1m 50R
 USB A-B
 
 <h2>Summary</h2>
+https://mborgerson.com/getting-started-with-the-hackrf-one-on-ubuntu-14-04
 
 <p>Figuring out what you need to install to get going can be a drag, so I&rsquo;ll spare you the work and tell you how to quickly get started on an Ubuntu 14.04 LTS system.</p>
 
