@@ -258,4 +258,3 @@ Static mode (location China):
 
 
 
-<h1>Well done!</h1>
