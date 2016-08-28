@@ -1,3 +1,3 @@
 # hello-world
 
-This is my first trial with GitHUb
+This is my first trial with GitHub
