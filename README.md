@@ -154,7 +154,8 @@ $ sudo ldconfig
 <ol>
 <li><p>Follow this instructions:</p>
 <a href="http://gqrx.dk/download/install-ubuntu">GQRX</a>
-
+</li>
+</ol>
 
 <ol>
 <li><p>or Clone the Gqrx repository:</p>
