@@ -234,7 +234,7 @@ $ git clone https://github.com/osqzss/gps-sdr-sim
 
 <h2>How to get BRDC file</h2>
 + Download latest daily GPS broadcast ephemers file (brdc) from <a href="ftp://cddis.gsfc.nasa.gov/gnss/data/daily/
-downloaded">Google Earth</a>
+downloaded">ftp://cddis.gsfc.nasa.gov/gnss/data/daily/2016/brdc/</a>
 + Example file name: brdc2400.16g
 
 
