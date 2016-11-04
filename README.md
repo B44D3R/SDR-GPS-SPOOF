@@ -152,7 +152,12 @@ $ sudo ldconfig
 <h2>Download, Build, and Install Gqrx</h2>
 
 <ol>
-<li><p>Clone the Gqrx repository:</p>
+<li><p>Follow this instructions:</p>
+<a href="http://gqrx.dk/download/install-ubuntu">GQRX</a>
+
+
+<ol>
+<li><p>or Clone the Gqrx repository:</p>
 
 <pre><code>$ cd ~/sdr
 $ git clone https://github.com/csete/gqrx.git
