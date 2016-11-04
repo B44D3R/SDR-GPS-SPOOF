@@ -153,46 +153,11 @@ $ sudo ldconfig
 
 <ol>
 <li><p>Follow this instructions:</p>
-<a href="http://gqrx.dk/download/install-ubuntu">GQRX</a>
+<a href="http://gqrx.dk/download/install-ubuntu">http://gqrx.dk/download/install-ubuntu</a>
 </li>
 </ol>
 
-<ol>
-<li><p>or Clone the Gqrx repository:</p>
 
-<pre><code>$ cd ~/sdr
-$ git clone https://github.com/csete/gqrx.git
-</code></pre></li>
-</ol>
-
-<p><strong>Note:</strong> When I cloned, I got changeset <code>e9171ff9</code>.</p>
-
-<ol>
-<li><p>Move to the repository:</p>
-
-<pre><code>$ cd gqrx
-</code></pre></li>
-
-<li><p>Create the build directory, move to it, and use <a href="http://qt-project.org/doc/qt-4.8/qmake-manual.html">qmake</a> (not Cmake) to create the Makefiles required for building.</p>
-
-<pre><code>$ mkdir build &amp;&amp; cd build
-$ qmake ../
-</code></pre></li>
-</ol>
-
-<p><strong>Note:</strong> You may get a message about no prefix being given. This is ok.</p>
-
-<ol>
-<li><p>Build and Install.</p>
-
-<pre><code>$ make
-</code></pre></li>
-
-<li><p>Run Gqrx</p>
-
-<pre><code>$ ./gqrx
-</code></pre></li>
-</ol>
 
 
 <h2>Download, Build, and Install GPS-SDR-SIM</h2>
