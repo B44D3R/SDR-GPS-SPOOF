@@ -153,11 +153,13 @@ $ sudo ldconfig
 
 <ol>
 <li><p>Follow this instructions:</p>
-<a href="http://gqrx.dk/download/install-ubuntu">http://gqrx.dk/download/install-ubuntu</a>
+<pre><code>$ sudo apt-get install gqrx-sdr
+$ sudo apt-get install libvolk1-bin
+$ volk_profile
+</code></pre>
+
 </li>
 </ol>
-
-
 
 
 <h2>Download, Build, and Install GPS-SDR-SIM</h2>
